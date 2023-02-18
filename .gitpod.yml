@@ -1,0 +1,10 @@
+tasks:
+  - before: |
+      cd java-sdet-bootcamp
+    init: |
+      mvn clean install
+    command: echo 'Ready to test!'
+
+vscode:
+  extensions:
+    - vscjava.vscode-java-test
