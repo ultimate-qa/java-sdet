@@ -1,6 +1,6 @@
 tasks:
   - before: |
-      cd java-sdet-bootcamp
+      cd java-sdet-boootcamp/
     init: |
       mvn clean install
     command: echo 'Ready to test!'
