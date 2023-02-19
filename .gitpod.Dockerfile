@@ -55,9 +55,9 @@ COPY scripts/gitpod/supervisord.conf /etc
 #==============================
 # Scripts to run XVFB, VNC, and noVNC
 #==============================
-COPY scripts/gitpod/start-xvfb.sh \
-      scripts/gitpod/start-vnc.sh \
-      scripts/gitpod/start-novnc.sh \
+COPY start-xvfb.sh \
+      start-vnc.sh \
+      start-novnc.sh \
       /home/gitpod/selenium/
 
 # To run browser tests
