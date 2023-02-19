@@ -7,8 +7,6 @@ tasks:
     init: |
       mvn clean install
     command: echo 'Ready'
-  - name: Supervisor (VNC and noVNC)
-    command: /usr/bin/supervisord --configuration /etc/supervisord.conf &
 
 vscode:
   extensions:
