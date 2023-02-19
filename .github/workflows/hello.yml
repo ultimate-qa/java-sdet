@@ -27,10 +27,14 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
+      working-directory: java-sdet-bootcamp
       run: mvn -B package --file pom.xml
     - name: Run unit tests
+      working-directory: java-sdet-bootcamp
       run: mvn test -Dtest=UnitTests
     - name: Run API tests
+      working-directory: java-sdet-bootcamp
       run: mvn test -Dtest=APITests
     - name: Run UI tests
+      working-directory: java-sdet-bootcamp
       run: mvn test -Dtest=UITests
