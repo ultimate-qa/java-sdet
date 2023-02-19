@@ -54,11 +54,11 @@ public class UITest {
         List<String> tags = Arrays.asList("wcag21aa");
         AxeBuilder builder = new AxeBuilder();
         builder.withTags(tags);
-        Results results = builder.analyze(driver);
-        List<Rule> violations = results.getViolations();
+        Results axeResults = builder.analyze(driver);
+        List<Rule> violations = axeResults.getViolations();
         for (Rule i : violations) {
             System.out.println(i);
         }
-        Assert.assertEquals(0, results.getViolations().size());
+        Assert.assertEquals(0, violations.size());
     }
 }
