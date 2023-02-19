@@ -6,7 +6,7 @@ tasks:
       cd java-sdet-boootcamp/
     init: |
       mvn clean install
-    command: echo 'Ready to test!'
+    command: echo 'Ready'
 
 vscode:
   extensions:
