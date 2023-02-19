@@ -11,3 +11,18 @@ tasks:
 vscode:
   extensions:
     - vscjava.vscode-java-test
+
+
+ports:
+  - name: VNC
+    description: Port where VNC server is listening
+    port: 5900
+    onOpen: ignore
+  - name: XVFB
+    description: Port where XVFB server is listening
+    port: 6099
+    onOpen: ignore
+  - name: noVNC
+    description: Port where the noVNC view is available
+    port: 7900
+    onOpen: notify
