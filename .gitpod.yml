@@ -7,6 +7,8 @@ tasks:
     init: |
       mvn clean install
     command: echo 'Ready'
+  - name: Supervisor (VNC and noVNC)
+    command: /usr/bin/supervisord --configuration /etc/supervisord.conf &
 
 vscode:
   extensions:
@@ -26,3 +28,7 @@ ports:
     description: Port where the noVNC view is available
     port: 7900
     onOpen: notify
+  - name: Build and test ports
+    description: Other ports opened while building or testing
+    port: 8000-65535
+    onOpen: ignore
