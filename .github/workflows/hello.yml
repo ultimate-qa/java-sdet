@@ -29,6 +29,10 @@ jobs:
     - name: List directories
       run: |
         ls -a
+    - name: Mvn Verify
+      run: mvn --batch-mode --update-snapshots verify
+    - run: cd 'java-sdet-bootcamp/'
+    - run: ls -a
     - name: Build with Maven
       run: |
         cd 'java-sdet-bootcamp/'
