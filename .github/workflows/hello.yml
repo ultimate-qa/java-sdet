@@ -31,7 +31,7 @@ jobs:
         ls -a
     - name: Build with Maven
       run: |
-        cd '/home/runner/work/java-sdet/java-sdet-bootcamp'
+        cd 'java-sdet-bootcamp/'
         mvn clean install
     - name: Run unit tests
       working-directory: java-sdet-bootcamp
