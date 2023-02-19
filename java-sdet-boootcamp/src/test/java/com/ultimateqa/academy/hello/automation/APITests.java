@@ -9,7 +9,7 @@ import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class API {
+public class APITests {
     @Before
     public void setup() {
         RestAssured.baseURI = "https://jsonplaceholder.typicode.com";

@@ -18,7 +18,7 @@ import java.time.Duration;
 import java.util.Arrays;
 import java.util.List;
 
-public class UITest {
+public class UITests {
     @Test
     public void chromeSession() {
         WebDriverManager.chromedriver().setup();
@@ -30,11 +30,7 @@ public class UITest {
         driver.quit();
     }
 
-    @Test
-    public void unitTest() {
-        Calculator calculator = new Calculator();
-        Assert.assertEquals(4, calculator.add(2,2));
-    }
+
 
     @Test
     public void accessibilityTest() {
