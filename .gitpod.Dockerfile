@@ -2,6 +2,10 @@ FROM gitpod/workspace-full
 
 USER gitpod
 
+RUN bash -c ". /home/gitpod/.sdkman/bin/sdkman-init.sh && \
+    sdk install java 17.0.3-ms && \
+    sdk default java 17.0.3-ms"
+
 # So we can install browsers and browser drivers later
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - && \
     echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list
