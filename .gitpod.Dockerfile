@@ -50,7 +50,7 @@ USER gitpod
 #======================================
 # Add Supervisor configuration file
 #======================================
-COPY scripts/gitpod/supervisord.conf /etc
+COPY supervisord.conf /etc
 
 #==============================
 # Scripts to run XVFB, VNC, and noVNC
