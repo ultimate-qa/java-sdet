@@ -15,11 +15,11 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
-
+  build-test:
     runs-on: ubuntu-latest
     defaults:
       run:
+        shell: bash
         working-directory: java-sdet-bootcamp
 
     steps:
