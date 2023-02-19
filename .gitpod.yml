@@ -14,21 +14,18 @@ vscode:
   extensions:
     - vscjava.vscode-java-test
 
-
 ports:
-  - name: VNC
-    description: Port where VNC server is listening
-    port: 5900
+  - port: 3000
+    onOpen: open-browser
+    visibility: public
+    name: Website
+    description: Preview of Website
+  - port: 5900
     onOpen: ignore
-  - name: XVFB
-    description: Port where XVFB server is listening
-    port: 6099
-    onOpen: ignore
-  - name: noVNC
-    description: Port where the noVNC view is available
-    port: 7900
-    onOpen: notify
-  - name: Build and test ports
-    description: Other ports opened while building or testing
-    port: 8000-65535
-    onOpen: ignore
+    name: VNC
+    description: VNC Server
+  - port: 6080
+    onOpen: open-browser
+    visibility: public
+    name: VNC
+    description: VNC Viewer
