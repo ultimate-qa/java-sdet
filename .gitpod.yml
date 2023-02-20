@@ -11,6 +11,7 @@ tasks:
 vscode:
   extensions:
     - vscjava.vscode-java-test
+    - redhat.java
 
 ports:
   - port: 3000
