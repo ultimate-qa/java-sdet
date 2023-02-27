@@ -4,6 +4,7 @@ import com.deque.html.axecore.results.Results;
 import com.deque.html.axecore.results.Rule;
 import com.deque.html.axecore.selenium.AxeBuilder;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -19,18 +20,17 @@ import java.util.Arrays;
 import java.util.List;
 
 public class UITests {
+
+    WebDriver driver;
     @Test
     public void chromeSession() {
         WebDriverManager.chromedriver().setup();
 
-        WebDriver driver = new ChromeDriver();
+        driver = new ChromeDriver();
         driver.navigate().to("https://ultimateqa.com/automation");
         WebElement firstResult = new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.elementToBeClickable(By.linkText("Big page with many elements")));
-        driver.quit();
     }
-
-
 
     @Test
     public void accessibilityTest() {
@@ -39,7 +39,7 @@ public class UITests {
         options.addArguments(
                 "--headless", "--disable-gpu", "--window-size=1920,1200", "--ignore-certificate-errors");
 
-        WebDriver driver = new ChromeDriver(options);
+        driver = new ChromeDriver(options);
         driver.get("https://www.google.com");
 
         List<String> tags = Arrays.asList("wcag21aa");
@@ -51,5 +51,9 @@ public class UITests {
             System.out.println(i);
         }
         Assert.assertEquals(0, violations.size());
+    }
+    @After
+    public void cleanup(){
+        driver.quit();
     }
 }
