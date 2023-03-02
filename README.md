@@ -17,7 +17,7 @@ We will focus on a holistic approach of risk mitigation by doing:
 
 :briefcase: Learn how to crush interviews and land a $100K+ career
 
-:female-technologist: Quickly find your next dream role with our network of corporate partners
+👩‍💻 Quickly find your next dream role with our network of corporate partners
 
 :earth_americas: Learn from the world's best
 
