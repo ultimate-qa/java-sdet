@@ -19,6 +19,8 @@ jobs:
           java-version: '17'
           distribution: 'adopt'
       - name: Build with Maven
-        run: mvn -B package --file java-sdet/java-sdet-bootcamp/pom.xml
+        run: mvn -B package --file pom.xml
+        working-directory: java-sdet/java-sdet-bootcamp
       - name: Run tests
-        run: mvn test --file java-sdet/java-sdet-bootcamp/pom.xml
+        working-directory: java-sdet/java-sdet-bootcamp
+        run: mvn test --file pom.xml
