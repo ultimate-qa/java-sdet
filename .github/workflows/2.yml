@@ -21,6 +21,7 @@ jobs:
       - name: Build with Maven
         run: | 
           cd /Users/runner/work/
+          ls -a
           mvn -B package --file pom.xml
         working-directory: /Users/runner/work/java-sdet/java-sdet-bootcamp
       - name: Run tests
