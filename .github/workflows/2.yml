@@ -20,7 +20,7 @@ jobs:
           distribution: 'adopt'
       - name: Build with Maven
         run: | 
-          cd ..
+          cd /Users/runner/work/
           mvn -B package --file pom.xml
         working-directory: java-sdet-bootcamp
       - name: Run tests
