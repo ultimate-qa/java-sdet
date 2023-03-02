@@ -1,4 +1,4 @@
-name: Selenium Test
+name: Hello Automation World
 
 on:
   push:
@@ -26,4 +26,4 @@ jobs:
           ls -a
           
       - name: Run tests
-        run: mvn test -X
+        run: mvn test
