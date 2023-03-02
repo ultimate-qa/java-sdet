@@ -8,7 +8,7 @@ on:
 
 defaults:
   run:
-    working-directory: ${{ env.GITHUB_WORKSPACE }}
+    working-directory: ${{ GITHUB_WORKSPACE }}
 
 jobs:
   build:
@@ -22,6 +22,8 @@ jobs:
         with:
           java-version: '17'
           distribution: 'adopt'
+      - name: Print env variables
+        run: env
       - name: Build with Maven
         run: mvn -B package --file pom.xml
         working-directory: java-sdet-bootcamp
