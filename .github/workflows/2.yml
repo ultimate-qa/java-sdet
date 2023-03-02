@@ -23,8 +23,6 @@ jobs:
           ls -a
       - name: Build with Maven
         run: | 
-          cd /Users/runner/work/
-          ls -a
           mvn -B package --file pom.xml
       - name: Run tests
         run: mvn test --file pom.xml
