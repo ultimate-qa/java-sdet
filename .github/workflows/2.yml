@@ -18,12 +18,15 @@ jobs:
         with:
           java-version: '17'
           distribution: 'adopt'
+      - name: Check directory
+        run: | 
+          ls -a
       - name: Build with Maven
         run: | 
           cd /Users/runner/work/
           ls -a
           mvn -B package --file pom.xml
-        working-directory: /Users/runner/work/java-sdet/java-sdet-bootcamp
+        working-directory: /Users/runner/work/java-sdet/java-sdet/java-sdet-bootcamp
       - name: Run tests
         working-directory: java-sdet-bootcamp
         run: mvn test --file pom.xml
