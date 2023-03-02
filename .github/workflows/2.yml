@@ -26,4 +26,5 @@ jobs:
           ls -a
           
       - name: Run tests
+        working-directory: /java-sdet-bootcamp
         run: mvn test
