@@ -26,7 +26,5 @@ jobs:
           cd /Users/runner/work/
           ls -a
           mvn -B package --file pom.xml
-        working-directory: /Users/runner/work/java-sdet/java-sdet/java-sdet-bootcamp
       - name: Run tests
-        working-directory: java-sdet-bootcamp
         run: mvn test --file pom.xml
