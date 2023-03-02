@@ -1,9 +1,9 @@
 package com.ultimateqa.academy.hello.automation;
 
-import com.deque.html.axecore.results.Results;
-import com.deque.html.axecore.results.Rule;
-import com.deque.html.axecore.selenium.AxeBuilder;
-import io.github.bonigarcia.wdm.WebDriverManager;
+import java.time.Duration;
+import java.util.Arrays;
+import java.util.List;
+
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
@@ -15,18 +15,24 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
-import java.util.Arrays;
-import java.util.List;
+import com.deque.html.axecore.results.Results;
+import com.deque.html.axecore.results.Rule;
+import com.deque.html.axecore.selenium.AxeBuilder;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class UITests {
 
     WebDriver driver;
+
     @Test
     public void chromeSession() {
         WebDriverManager.chromedriver().setup();
 
-        driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments(
+                "--headless", "--disable-gpu", "--window-size=1920,1200", "--ignore-certificate-errors");
+        driver = new ChromeDriver(options);
         driver.navigate().to("https://ultimateqa.com/automation");
         WebElement firstResult = new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.elementToBeClickable(By.linkText("Big page with many elements")));
@@ -52,8 +58,9 @@ public class UITests {
         }
         Assert.assertEquals(0, violations.size());
     }
+
     @After
-    public void cleanup(){
+    public void cleanup() {
         driver.quit();
     }
 }
