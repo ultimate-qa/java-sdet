@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [ main ]
 
+defaults:
+  run:
+    working-directory: ${{ github.workspace }}
+
 jobs:
   build:
 
@@ -20,7 +24,7 @@ jobs:
           distribution: 'adopt'
       - name: Build with Maven
         run: mvn -B package --file pom.xml
-        working-directory: java-sdet/java-sdet-bootcamp
+        working-directory: java-sdet-bootcamp
       - name: Run tests
-        working-directory: java-sdet/java-sdet-bootcamp
+        working-directory: java-sdet-bootcamp
         run: mvn test --file pom.xml
