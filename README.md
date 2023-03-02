@@ -13,19 +13,21 @@ We will focus on a holistic approach of risk mitigation by doing:
 
 ## The Java Software Engineer in Test (SDET) curriculum is your ticket to a wonderful test automation career.
 
-:earth_americas: 5 months of world-class training
+:rotating_light: Ready to level up your #QA career and enter a job market of 100K+ open positions?  Our Java Software Engineer in Test (SDET) program is coming soon!
 
-:computer: Gain real-world experience through automation with real customers
+:briefcase: Learn how to crush interviews and land a $100K+ career
 
-:rocket: Build out your open source coding skills through group projects
+:female-technologist: Quickly find your next dream role with our network of corporate partners
 
-:briefcase: Interview training, on-the-job guidance, and live support to ensure your success in your new role.
+:earth_americas: Learn from the world's best
 
 :date: 100% virtual education
 
-Join the ranks of the world's elite software developers and test automation experts :star2:
+:computer: Gain real-world experience through automation with real customers
 
-:point_right: Join now, be the first to know about the launch and enjoy exclusive benefits: https://ultimateqa.ck.page/academy-coming-soon
+:rocket: Build out your open-source coding skills through group projects
+
+:point_right:  Join now for exclusive launch benefits and insider access! https://ultimateqa.ck.page/academy-coming-soon
 
 ### Hello Automation World
 
