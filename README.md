@@ -1,16 +1,5 @@
 # Java SDET Complete Bootcamp
 
-In this automation best practices workshop you will learn the latest and greatest tools and techniques to drastically improve your testing!
-
-We will focus on a holistic approach of risk mitigation by doing: 
-
-* functional web testing,
-* visual testing,
-* performance testing, 
-* and many other things in between 😁
-
----
-
 ## The Java Software Engineer in Test (SDET) curriculum is your ticket to a wonderful test automation career.
 
 :rotating_light: Ready to level up your #QA career and enter a job market of 100K+ open positions?  Our Java Software Engineer in Test (SDET) program is coming soon!
