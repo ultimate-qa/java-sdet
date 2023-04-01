@@ -1,4 +1,4 @@
-package com.ultimateqa.academy.hello.automation;
+package com.ultimateqa.academy.automation;
 
 import org.junit.Assert;
 import org.junit.Test;

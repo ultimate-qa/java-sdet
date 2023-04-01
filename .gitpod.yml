@@ -3,8 +3,6 @@ image:
 
 tasks:
   - before: |
-      cd java-sdet-boootcamp/
-    init: |
       mvn clean install
     command: echo 'Ready'
 
@@ -12,6 +10,8 @@ vscode:
   extensions:
     - vscjava.vscode-java-test
     - redhat.java
+
+    - vscjava.vscode-java-pack
 
 ports:
   - port: 3000

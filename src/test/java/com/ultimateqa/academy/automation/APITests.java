@@ -1,4 +1,4 @@
-package com.ultimateqa.academy.hello.automation;
+package com.ultimateqa.academy.automation;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
