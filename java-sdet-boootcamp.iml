@@ -11,24 +11,10 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-java:4.8.1" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-api:4.8.1" level="project" />
-    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-chrome-driver:4.8.1" level="project" />
-    <orderEntry type="library" name="Maven: com.google.auto.service:auto-service-annotations:1.0.1" level="project" />
-    <orderEntry type="library" name="Maven: com.google.auto.service:auto-service:1.0.1" level="project" />
-    <orderEntry type="library" name="Maven: com.google.auto:auto-common:1.2" level="project" />
-    <orderEntry type="library" name="Maven: com.google.guava:guava:31.1-jre" level="project" />
-    <orderEntry type="library" name="Maven: com.google.guava:failureaccess:1.0.1" level="project" />
-    <orderEntry type="library" name="Maven: com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava" level="project" />
-    <orderEntry type="library" name="Maven: com.google.code.findbugs:jsr305:3.0.2" level="project" />
-    <orderEntry type="library" name="Maven: org.checkerframework:checker-qual:3.12.0" level="project" />
-    <orderEntry type="library" name="Maven: com.google.errorprone:error_prone_annotations:2.11.0" level="project" />
-    <orderEntry type="library" name="Maven: com.google.j2objc:j2objc-annotations:1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-chromium-driver:4.8.1" level="project" />
-    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-json:4.8.1" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-devtools-v108:4.8.1" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-devtools-v109:4.8.1" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-devtools-v110:4.8.1" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-devtools-v85:4.8.1" level="project" />
-    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-edge-driver:4.8.1" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-firefox-driver:4.8.1" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-http:4.8.1" level="project" />
     <orderEntry type="library" name="Maven: dev.failsafe:failsafe:3.3.0" level="project" />
@@ -60,7 +46,6 @@
     <orderEntry type="library" name="Maven: io.opentelemetry:opentelemetry-sdk:1.22.0" level="project" />
     <orderEntry type="library" name="Maven: io.opentelemetry:opentelemetry-semconv:1.22.0-alpha" level="project" />
     <orderEntry type="library" name="Maven: io.ous:jtoml:2.0.0" level="project" />
-    <orderEntry type="library" name="Maven: net.bytebuddy:byte-buddy:1.12.22" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-exec:1.3" level="project" />
     <orderEntry type="library" name="Maven: org.asynchttpclient:async-http-client:2.12.3" level="project" />
     <orderEntry type="library" name="Maven: org.asynchttpclient:async-http-client-netty-utils:2.12.3" level="project" />
@@ -72,8 +57,6 @@
     <orderEntry type="library" name="Maven: com.typesafe.netty:netty-reactive-streams:2.0.4" level="project" />
     <orderEntry type="library" name="Maven: com.sun.activation:jakarta.activation:1.2.2" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-manager:4.8.1" level="project" />
-    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-safari-driver:4.8.1" level="project" />
-    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-support:4.8.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: io.github.bonigarcia:webdrivermanager:5.3.1" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:2.0.3" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.google.code.gson:gson:2.10" level="project" />
@@ -114,5 +97,22 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.apache.groovy:groovy-json:4.0.6" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: io.rest-assured:rest-assured-common:5.3.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: io.rest-assured:xml-path:5.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.seleniumhq.selenium:selenium-chrome-driver:4.6.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.auto.service:auto-service-annotations:1.0.1" level="project" />
+    <orderEntry type="library" name="Maven: com.google.auto.service:auto-service:1.0.1" level="project" />
+    <orderEntry type="library" name="Maven: com.google.auto:auto-common:1.2" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:31.1-jre" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:failureaccess:1.0.1" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava" level="project" />
+    <orderEntry type="library" name="Maven: com.google.code.findbugs:jsr305:3.0.2" level="project" />
+    <orderEntry type="library" name="Maven: org.checkerframework:checker-qual:3.12.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.errorprone:error_prone_annotations:2.11.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.j2objc:j2objc-annotations:1.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.seleniumhq.selenium:selenium-chromium-driver:4.6.0" level="project" />
+    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-json:4.6.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.seleniumhq.selenium:selenium-support:4.6.0" level="project" />
+    <orderEntry type="library" name="Maven: net.bytebuddy:byte-buddy:1.12.18" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.seleniumhq.selenium:selenium-safari-driver:4.6.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.seleniumhq.selenium:selenium-edge-driver:4.6.0" level="project" />
   </component>
 </module>

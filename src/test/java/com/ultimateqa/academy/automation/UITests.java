@@ -30,8 +30,8 @@ public class UITests {
         WebDriverManager.chromedriver().setup();
 
         ChromeOptions options = new ChromeOptions();
-        options.addArguments(
-                "--headless", "--disable-gpu", "--window-size=1920,1200", "--ignore-certificate-errors");
+        options.addArguments("--remote-allow-origins=*", "--headless", "--disable-gpu",
+                "--window-size=1920,1200", "--ignore-certificate-errors");
         driver = new ChromeDriver(options);
         driver.navigate().to("https://ultimateqa.com/automation");
         WebElement firstResult = new WebDriverWait(driver, Duration.ofSeconds(10))
@@ -42,8 +42,8 @@ public class UITests {
     public void accessibilityTest() {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
-        options.addArguments(
-                "--headless", "--disable-gpu", "--window-size=1920,1200", "--ignore-certificate-errors");
+        options.addArguments("--remote-allow-origins=*", "--headless", "--disable-gpu",
+                "--window-size=1920,1200", "--ignore-certificate-errors");
 
         driver = new ChromeDriver(options);
         driver.get("https://www.google.com");
