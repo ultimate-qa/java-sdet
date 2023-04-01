@@ -1,4 +1,4 @@
-package com.ultimateqa.academy.hello.automation;
+package com.ultimateqa.academy.automation;
 
 import java.time.Duration;
 import java.util.Arrays;

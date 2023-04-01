@@ -1,4 +1,4 @@
-package com.ultimateqa.academy.hello.automation;
+package com.ultimateqa.academy.automation;
 
 public class Calculator {
     public int add(int i, int i2) {
