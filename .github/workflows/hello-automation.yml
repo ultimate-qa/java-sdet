@@ -26,4 +26,4 @@ jobs:
           ls -a
           
       - name: Run tests
-        run: mvn test
+        run: mvn "-Dtest=APITests,UITests,UnitTests" test
