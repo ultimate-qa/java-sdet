@@ -3,14 +3,13 @@ image:
 
 tasks:
   - before: |
-      mvn clean install
+      mvn "-Dtest=APITests,UITests,UnitTests" clean test
     command: echo 'Ready'
 
 vscode:
   extensions:
     - vscjava.vscode-java-test
     - redhat.java
-
     - vscjava.vscode-java-pack
 
 ports:
