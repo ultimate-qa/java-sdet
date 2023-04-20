@@ -1,6 +1,5 @@
 package com.ultimateqa.academy.first;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
 import org.junit.Test;
 import org.openqa.selenium.By;
